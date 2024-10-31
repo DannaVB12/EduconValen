@@ -22,7 +22,8 @@ class RegistrationActivity : ComponentActivity() {
             val idNumber = idNumberEditText.text.toString()
             val birthDate = birthDateEditText.text.toString()
 
-            val intent = Intent(this, AcceptanceActivity::class.java).apply {
+
+            val intent = Intent(this, CareersActivity::class.java).apply {
                 putExtra("NAME", name)
                 putExtra("ID_NUMBER", idNumber)
                 putExtra("BIRTH_DATE", birthDate)

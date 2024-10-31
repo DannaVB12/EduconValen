@@ -32,9 +32,10 @@
         android:inputType="number" />
 
     <TextView
+        android:id="@+id/exampleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fecha de Nacimiento"
+        android:text="Fecha de nacimiento"
         android:textSize="18sp" />
 
     <EditText
@@ -47,5 +48,6 @@
         android:id="@+id/submitButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enviar" />
+        android:text="Registrarse"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

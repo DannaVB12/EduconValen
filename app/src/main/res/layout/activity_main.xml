@@ -1,19 +1,35 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:background="@drawable/estudiante">
 
     <TextView
-        android:id="@+id/welcomeText"
-        android:layout_width="wrap_content"
+        android:id="@+id/welcomeTextView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a EduconValen"
-        android:textSize="24sp" />
+        android:text="¡Bienvenido a EduconValen!"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        android:gravity="center" />
 
     <Button
         android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ingresa aquí para inscribirte" />
-</LinearLayout>
+        android:text="Continuar"
+        android:textColor="#FFFFFF"
+
+    android:padding="12dp"
+    android:layout_marginTop="16dp"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginBottom="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,5 @@
         android:textSize="18sp"
         android:text="Los datos de la inscripción aparecerán aquí." />
 
-    <!-- Puedes agregar otros componentes si es necesario -->
 
 </LinearLayout>
